@@ -1,0 +1,92 @@
+/* Hero Banner Section */
+.hero-banner {
+  background-image: url('images/hero-banner-img.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  width: auto;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-text {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translateY(-50%);
+  width: 30%;
+  color: #fff;
+  font-size: 24px;
+}
+
+.banner-buttons {
+  position: absolute;
+  bottom: 350px;
+  left: 20%;
+}
+
+.banner-buttons button {
+  background-color: transparent;
+  border: 2px solid #ff5a5f;
+  color: #fff;
+  padding: 10px 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.banner-buttons button:hover {
+  background-color: #ff5a5f;
+}
+
+/* Logo Slider */
+.logo-slider-container {
+  text-align: center;
+  margin-top: 500px;
+  overflow: hidden;
+  width: 800px;
+}
+
+.logo-slider {
+  display: flex;
+  gap: 20px;
+  transition: transform 1s ease-in-out;
+}
+
+.logo-slider img {
+  width: 140px;
+  height: 70px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.logo-slider img:hover {
+  transform: scale(1);
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .banner-text {
+    width: 90%;
+    font-size: 20px;
+    text-align: center;
+    left: 5%;
+  }
+
+  .banner-buttons {
+    bottom: 20px;
+    left: 5%;
+    width: 90%;
+    text-align: center;
+  }
+
+  .banner-buttons button {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
